@@ -1,0 +1,144 @@
+<!-- N Y -->
+<!-- Contact Page -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<!-- Body Start (Uses startForm onload) -->
+<body onload="startForm()">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Nat's Car Rentals</span> <!-- header -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <!-- List start -->
+            <ul class="navbar-nav">
+
+                <!-- Index -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">index.html</a>
+                </li>
+
+                <!-- Contact -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact.html</a>
+                </li>
+
+                <!-- Booking -->
+                <li class="nav-item">
+                    <a class="nav-link" href="booking.html">booking.html</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <!-- List End -->
+        </div>
+    </div>
+</nav>
+<!-- Navbar end -->
+
+<!-- Header -->
+<div class="container text-center">
+    <div class="row align-items-start">
+        <div class="col">
+            <h2>Contact Us</h2>
+            <p>Use this form! Your feedback <em>totally</em> does not go into a paper shredder once received. Trust us.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Contact Us Form -->
+<div class="container text-center">
+    <form id="contactForm" autocomplete="off" onsubmit="return validate()">
+
+        <!-- First Row: Name, Email, Phone -->
+        <div class="row row-cols-3">
+
+            <!-- Name Field -->
+            <div id="nameCol" class="col">
+                <input type="text" id="name" class="form-control" placeholder="Name" aria-label="Name">
+            </div>
+
+            <!-- Email Field -->
+            <div id="emailCol" class="col">
+                <input type="text" id="email" class="form-control" placeholder="Email" aria-label="Email">
+            </div>
+
+            <!-- Phone Field -->
+            <div id="phoneCol" class="col">
+                <input type="tel" id="phone" class="form-control" placeholder="Phone" aria-label="Phone">
+            </div>
+        </div>
+        <br><br>
+
+        <!-- Second Row: Message Field -->
+        <div id="rowTwo" class="row">
+            <!-- Message Field -->
+            <div class="mb-3">
+            <textarea class="form-control" id="message" rows="3" placeholder="Message (Less than 500 characters)"
+                      aria-label="Message"></textarea>
+            </div>
+        </div>
+
+        <!-- Third Row: Maths Problem -->
+        <div class="row">
+
+            <!-- Maths Problem -->
+            <div class="col">
+                <input type="text" id="mathsProblem" class="form-control" placeholder="Solve: "
+                       aria-label="MathsProblem">
+            </div>
+        </div>
+        <br>
+
+
+        <!-- Fourth Row: Submit Button, Clear Form button -->
+        <div class="row">
+
+            <!-- Submit Button -->
+            <div class="col">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+
+            <!-- Reset Form BUtton -->
+            <div class="col">
+                <input type="reset" id="reset" value="Clear Form">
+            </div>
+
+        </div>
+        <br><br>
+        <!-- Fifth Row : Error/Validation Message -->
+        <div class="row">
+            <div class="col">
+                <p id="validationMessage"></p>
+            </div>
+        </div>
+    </form>
+    <!-- End Form -->
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
